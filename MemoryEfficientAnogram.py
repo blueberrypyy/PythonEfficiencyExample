@@ -41,6 +41,7 @@ class DetermineAnogram:
             else:
                 print('')
 
+
 def read_from_sample():
     anogram_list = {
         'hello': 'jello',
@@ -62,8 +63,6 @@ def read_from_sample():
     anogram_check = DetermineAnogram(anogram_list)
     anogram_check.determine_anogram()
     
-            
-
 
 def read_from_user_input():
     while True:

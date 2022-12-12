@@ -9,15 +9,19 @@
 
 # To achieve a minimum runtime, I utilized 
 # Python's multiprocessing module to run concurrent API requests in parrallel to one 
-# another. I havedone my best to minimize resource usage by dividing the large dataset 
+# another. I have done my best to minimize resource usage by dividing the large dataset 
 # into 'chunks' and putting the items in a queue. This method relies on a "first in, first out"
-# algorythmic approach to avoid needing to store the items in memory.
+# algorythmic approach to avoid needing to store the items in memory. If I had more time, I would
+# make the main function more dynamic depending on how many CPUs the current system has available. 
+# I could also add logging functionality to log precesses during the runstime. 
 
 # Written by Justin Schadwill
 
 
 from multiprocessing import Process, Queue
 import json
+
+print('\nCPU count:', multiprocessing.cpu_count(), '\n')
 
 rest_api_request = [
         {'main':{
@@ -96,29 +100,5 @@ online_count = sum([r[0] for r in results])
 offline_count = sum([r[1] for r in results])
 print(f"Number of online items: {online_count}")
 print(f"Number of offline items: {offline_count}")
-
-
-
-'''
-print('CPU count:', multiprocessing.cpu_count())
-for i in rest_api_request:
-    print(i['main']['MAC'])
-#print(rest_api_request['main'])
-
-class Device:
-    def __init__(self, mac_address):
-        self.mac_address = mac_address
-        self.status = None
-
-    # Make RESTful API request to check device status
-    def check_status(self):
-        self.status = rest_api_request.status
-
-def create_worker_pool(mac_addresses):
-    # Create worker pool to make parallel API requests
-    tasks = []
-    for mac_address in mac_addresses:
-        device = Device.mac_address
-'''
 
 

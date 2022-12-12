@@ -61,13 +61,14 @@ rows = [
 
 print(fields)
 print(rows)
-# Write to sv file
+# Write to csv file
 filename = 'most_resource_intensive.csv'
 with open('most_resource_intensive.csv', 'w') as csvfile:
     csvwriter = csv.writer(csvfile)
     csvwriter.writerow(fields)
     csvwriter.writerows(rows)
 
+# DEBUG
 #print(getListOfProcessSortedByMemory()[-3:][0]['name'])
 
 # Create bar plot comparing virtual memory
