@@ -19,6 +19,7 @@
 
 
 from multiprocessing import Process, Queue
+import multiprocessing
 import json
 
 print('\nCPU count:', multiprocessing.cpu_count(), '\n')
