@@ -1,4 +1,4 @@
-# !!! WARNING: PLEASE READ THE README FILE IN ROOT DIRECTORY BEFORE RUNNING !!!
+# !!! PLEASE READ THE README FILE IN ROOT DIRECTORY BEFORE RUNNING !!!
 
 # This program will take an input of two words and determine if the two words
 # are an anorgram or not. The program can also recognize if the string contains

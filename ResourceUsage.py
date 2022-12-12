@@ -1,4 +1,4 @@
-# !!! WARNING: PLEASE READ THE README FILE IN ROOT DIRECTORY BEFORE RUNNING !!!
+# !!! PLEASE READ THE README FILE IN ROOT DIRECTORY BEFORE RUNNING !!!
 
 # This program is designed to compare the top 3 most resource intensive processes
 # by utilizing the psutil library. This program will parse all the running processes
