@@ -16,7 +16,7 @@
 # Written by Justin Schadwill
 
 
-import multiprocessing 
+from multiprocessing import Process, Queue
 import json
 
 rest_api_request = [
@@ -54,7 +54,6 @@ rest_api_request = [
             }},
         ]
 
-from multiprocessing import Process, Queue
 
 def parse_data(data, queue):
     # Parse the data to determine the number of 'online' and 'offline' items
