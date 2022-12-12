@@ -1,4 +1,4 @@
-# !!! WARNING: PLEASE READ THE README FILE IN ROOT DIRECTORY BEFORE RUNNING !!!
+# !!! PLEASE READ THE README FILE IN ROOT DIRECTORY BEFORE RUNNING !!!
 
 # This program will take a set of data in JSON format as if it were a RESTful API
 # request, and process the MAC addresses and determine if each MAC address is either
