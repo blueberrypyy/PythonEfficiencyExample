@@ -99,7 +99,7 @@ while not queue.empty():
 # Print the number of 'online' and 'offline' items
 online_count = sum([r[0] for r in results])
 offline_count = sum([r[1] for r in results])
-print(f"Number of online items: {online_count}")
-print(f"Number of offline items: {offline_count}")
+print(f"Number of online Devices: {online_count}")
+print(f"Number of offline Devices: {offline_count}")
 
 
