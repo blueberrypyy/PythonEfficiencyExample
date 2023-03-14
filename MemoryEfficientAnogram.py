@@ -3,12 +3,7 @@
 # This program will take an input of two words and determine if the two words
 # are an anorgram or not. The program can also recognize if the string contains
 # whitespace or not. It can be used with either the default test data, or take 
-# words from user input. 
-
-# This program utilizes the best Python programming practices by taking an 
-# Object Oriented approach and using the all() function to limit the amount of 
-#times the interpriter will have to loop through characters in the given string. 
-#This results in a memory effecient program. 
+# words from user input.  
 
 # Written by Justin Schadwill
 
