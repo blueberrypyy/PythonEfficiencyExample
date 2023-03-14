@@ -6,14 +6,7 @@
 # vs. the number of offline devices and return the results after the processes ar complete
 #The goal of this program is to minimize runtime, minimize resource usage, and generalize 
 #the methods and processes.
-
-# To achieve a minimum runtime, I utilized 
-# Python's multiprocessing module to run concurrent API requests in parrallel to one 
-# another. I have done my best to minimize resource usage by dividing the large dataset 
-# into 'chunks' and putting the items in a queue. This method relies on a "first in, first out"
-# algorythmic approach to avoid needing to store the items in memory. If I had more time, I would
-# make the main function more dynamic depending on how many CPUs the current system has available. 
-# I could also add logging functionality to log precesses during the runstime. 
+ 
 
 # Written by Justin Schadwill
 
